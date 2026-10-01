@@ -2,19 +2,11 @@
 # VoidFlame-ip • Custom Server Address
 # Paper 26.2 • Java 25
 # ================================================================
-# The address below is the real address players can use right now.
-# You can change it to another address/hostname for display.
-#
-# IMPORTANT:
-# A custom hostname such as play.VoidFlame.net must also point to the
-# server through DNS. This plugin cannot create DNS records by itself.
-#
-# Current real server:
-# 141.11.237.68:7817
-
+# Set the hostname players should use here.
+# DNS still has to point this hostname to the server externally.
 server:
-  address: "141.11.237.68:7817"
-  host: "141.11.237.68"
+  address: "play.VoidFlame.net"
+  host: "play.VoidFlame.net"
   port: 7817
 
 display:
@@ -27,7 +19,6 @@ display:
       - "&7Server IP: &f%ip%"
       - "&8&m----------------------------------------"
       - ""
-
   join-message:
     enabled: false
     lines:
