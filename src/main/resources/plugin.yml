@@ -2,18 +2,5 @@ name: VoidFlame-ip
 version: ${version}
 main: net.voidflame.ip.VoidFlameIpPlugin
 api-version: '26.1'
-description: Configurable custom server IP display and /ip command for VoidFlameMC.
+description: VoidFlame connection alias configuration.
 author: VoidFlameMC
-commands:
-  ip:
-    description: Shows the configured VoidFlame server address.
-    usage: /ip
-    aliases: [serverip, play]
-    permission: voidflame.ip.use
-permissions:
-  voidflame.ip.use:
-    description: Allows the player to use /ip.
-    default: true
-  voidflame.ip.reload:
-    description: Allows reloading the IP configuration.
-    default: op
