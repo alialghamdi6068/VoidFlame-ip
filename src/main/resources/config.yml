@@ -2,12 +2,13 @@
 # VoidFlame-ip • Custom Server Address
 # Paper 26.2 • Java 25
 # ================================================================
-# Set the hostname players should use here.
-# DNS still has to point this hostname to the server externally.
+# Players use custom_address in Minecraft.
+# target is the real server endpoint this hostname must resolve to.
 server:
-  address: "play.VoidFlame.net"
-  host: "play.VoidFlame.net"
-  port: 7817
+  custom_address: "play.VoidFlame.net"
+  target:
+    host: "141.11.237.68"
+    port: 7817
 
 display:
   command:
@@ -19,6 +20,7 @@ display:
       - "&7Server IP: &f%ip%"
       - "&8&m----------------------------------------"
       - ""
+
   join-message:
     enabled: false
     lines:
