@@ -1,0 +1,49 @@
+# ================================================================
+# VoidFlame-ip • Custom Server Address
+# Paper 26.2 • Java 25
+# ================================================================
+# IMPORTANT:
+# This plugin controls the CUSTOM/DISPLAYED server address only.
+# It does NOT change your real public IP, DNS, proxy, or server port.
+# To change the actual address players connect to, configure DNS/proxy/host.
+#
+# Change the value below, then use /vfip reload (OP) or restart the server.
+
+server:
+  # The address shown to players.
+  # Examples:
+  #   play.voidflame.net
+  #   mc.example.com:25565
+  address: "play.VoidFlame.net"
+
+  # Optional separate values for messages/UI.
+  host: "play.VoidFlame.net"
+  port: 25565
+
+display:
+  # /ip output
+  command:
+    enabled: true
+    lines:
+      - ""
+      - "&8&m----------------------------------------"
+      - "&5&lVoidFlameMC"
+      - "&7Server IP: &f%ip%"
+      - "&7Port: &f%port%"
+      - "&8&m----------------------------------------"
+      - ""
+
+  # Optional join message. Set enabled=false to disable.
+  join-message:
+    enabled: false
+    lines:
+      - "&8[&5VoidFlame&8] &7Connect: &f%ip%"
+
+messages:
+  no-permission: "&cYou do not have permission to use this."
+  reloaded: "&aVoidFlame-ip configuration reloaded."
+  player-only: "&cThis command can only be used by a player."
+
+performance:
+  # Cache the formatted address instead of rebuilding it for every command.
+  cache-display: true
